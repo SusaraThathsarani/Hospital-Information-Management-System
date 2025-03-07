@@ -1,0 +1,226 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title> Complete Responsive Hospital Website Design Tutorial</title>
+
+    <!--font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <!--header navbar section start-->
+
+    <header>
+        <!--logo name-->
+        <a href="#" class="logo"><span>D</span>octors <span>C</span>ares.</a>
+
+        <!-- navbar link-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#doctor">doctor</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#blog">blog</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="fas fa-bars"></div>
+
+
+
+
+    </header>
+
+
+
+    <!--header navbar section end-->
+    <!--home section start-->
+
+    <section id="home" class="home">
+
+        <div class="row">
+
+            <!--home images-->
+            <div class="images">
+                <img src="homepage.jpg" alt="">
+            </div>
+
+            <!--home heading -->
+            <div class="content">
+                <h1><span>Stay</span> Safe, <span>Stay</span> Healthy.</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing alit. Ipsa, officiis.</p>
+                <a href="#"><button class="button">read more</button></a>
+            </div>
+
+
+
+        </div>
+    </section>
+    <!-- home section end-->
+
+    <!--about section start-->
+    <section id="about" class="about">
+        <h1 class="heading"> about our facility </h1>
+        <h3 class="title">learn and explore our facility</h3>
+
+
+        <div class="box-container">
+            <!--start here-->
+
+            <div class="box">
+                <!--about images-->
+                <div class="images">
+                    <img src="aboutus.jpg" alt="">
+                </div>
+                <!--about heading &text -->
+                <div class="content">
+                    <h3> ambulance services</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad necessitatibus omnis unde dolore
+                        suscipit magnem officia. Maxime explicabo qui distinction?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+
+            </div>
+
+            <!--end here-->
+
+            <!--start here-->
+
+            <div class="box">
+                <!--about images-->
+                <div class="images">
+                    <img src="aboutus2.jpg" alt="">
+                </div>
+                <!--about heading &text -->
+                <div class="content">
+                    <h3> free checkupd</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad necessitatibus omnis unde dolore
+                        suscipit magnem officia. Maxime explicabo qui distinction?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+
+            </div>
+
+            <!--end here-->
+
+            <!--start here-->
+
+            <div class="box">
+                <!--about images-->
+                <div class="images">
+                    <img src="aboutus3.jpg" alt="">
+                </div>
+                <!--about heading &text -->
+                <div class="content">
+                    <h3>emergency rooms</h3>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad necessitatibus omnis unde dolore
+                        suscipit magnem officia. Maxime explicabo qui distinction?</p>
+                    <a href="#"><button class="button">learn more</button></a>
+                </div>
+
+            </div>
+
+            <!--end here-->
+        </div>
+
+    </section>
+
+
+    <!--about section end-->
+
+    <!--card section start-->
+    <section id="doctor" class="card">
+
+        <div class="container">
+
+            <h1 class="heading">doctors</h1>
+            <h3 class="title">our proffessional doctors</h3>
+
+            <div class="box-container">
+                <!--start here-->
+                <div class="box">
+                    <img src="doctor1.jpg" alt="">
+                    <div class="content">
+                        <a href="#">
+                            <h2>john doe</h2>
+                        </a>
+                        <p>proffectional</p>
+
+                        <!--card icons -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end here-->
+
+                <!--start here-->
+                <div class="box">
+                    <img src="doctor2.jpg" alt="">
+                    <div class="content">
+                        <a href="#">
+                            <h2>Elizabeth Blackwell</h2>
+                        </a>
+                        <p>proffectional</p>
+
+                        <!--card icons -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end here-->
+
+                <!--start here-->
+                <div class="box">
+                    <img src="doctor3.jpg" alt="">
+                    <div class="content">
+                        <a href="#">
+                            <h2>Robert james</h2>
+                        </a>
+                        <p>proffectional</p>
+
+                        <!--card icons -->
+                        <div class="icons">
+                            <a href="#" class="fab fa-facebook-f"></a>
+                            <a href="#" class="fab fa-twitter"></a>
+                            <a href="#" class="fab fa-instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <!--end here-->
+            </div>
+        </div>
+    </section>
+
+    <!--card section end-->
+
+
+
+
+
+    <!--jquery cdn link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- custom js file link -->
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>

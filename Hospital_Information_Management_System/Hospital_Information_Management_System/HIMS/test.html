@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hospital Information System</title>
+    <style>
+        /* (CSS styling remains the same as in the previous example) */
+    </style>
+</head>
+<body>
+
+    <h1>Hospital Information System</h1>
+
+    <div id="tabs">
+        <ul>
+            <li><a href="#patients">Patients</a></li>
+            <li><a href="#staff">Staff</a></li>
+        </ul>
+        <div id="patients">
+            <h2>Patients</h2>
+            <table id="patientTable">
+                <thead>
+                    <tr>
+                        <th>Patient ID</th>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Department</th>
+                        <th>Doctor</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="button-container">
+                <button onclick="addPatient()">Add Patient</button>
+            </div>
+        </div>
+        <div id="staff">
+            <h2>Staff</h2>
+            <table id="staffTable">
+                <thead>
+                    <tr>
+                        <th>Staff ID</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Role</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+            <div class="button-container">
+                <button onclick="addStaff()">Add Staff</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Data persistence using local storage
+        function loadFromLocalStorage() {
+            let storedPatients = localStorage.getItem('patients');
+            if (storedPatients) {
+                patientData = JSON.parse(storedPatients);
+            }
+            let storedStaff = localStorage.getItem('staff');
+            if (storedStaff) {
+                staffData = JSON.parse(storedStaff);
+            }
+            updatePatientTable();
+            updateStaffTable();
+        }
+
+        function saveToLocalStorage() {
+            localStorage.setItem('patients', JSON.stringify(patientData));
+            localStorage.setItem('staff', JSON.stringify(staffData));
+        }
+
+        // Search functionality
+        function search(tableId, searchTerm) {
+            let table = document.getElementById(tableId);
+            let rows = table.getElementsByTagName('tr');
+            for (let i = 1; i < rows.length; i++) { // Skip header row
+                let cells = rows[i].getElementsByTagName('td');
+                let found = false;
+                for (let j = 0; j < cells.length; j++) {
+                    if (cells[j].innerHTML.toLowerCase().includes(searchTerm.toLowerCase())) {
+                        found = true;
+                        break;
+                    }
+                }
+                if (found) {
+                    rows[i].style.display = '';
+                } else {
+                    rows[i].style.display = 'none';
+                }
+            }
+        }
+
+        // Add event listeners for search input
+        let searchInput = document.createElement('input');
+        searchInput.type = 'text';
+        searchInput.placeholder = 'Search...';
+        searchInput.oninput = function() {
+            search('patientTable', this.value);
+            search('staffTable', this.value);
+        };
+        document.body.insertBefore(searchInput, document.getElementById('tabs'));
+
+        // Load data from local storage on page load
+        loadFromLocalStorage();
+
+        // Add event listeners to save data on changes
+        window.addEventListener('beforeunload', function() {
+            saveToLocalStorage();
+        });
+
+        // Rest of the code for adding, removing, and updating tables remains the same
+    </script>
