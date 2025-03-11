@@ -1,0 +1,32 @@
+.App {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Adding space below Header */
+.content {
+  margin-top: 80px; /* Add margin space after the header */
+}
+
+/* Spacing between sections */
+section {
+  margin-bottom: 60px; /* Add space between each section */
+}
+
+/* Add general padding to each section */
+section h1, section h3 {
+  margin-bottom: 20px;
+}
+
+/* Optional: Add custom spacing in specific sections if needed */
+section#home {
+  margin-top: 80px;
+}
+
+/* Optional: If you want to add a unique margin or padding to each component */
+section#about, section#doctors, section#nurses, section#reviews, section#contact, section#blog {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}

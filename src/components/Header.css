@@ -1,0 +1,87 @@
+/* General styles for the header */
+header {
+    width: 96%; /* Set width to 96% of the container */
+     /* White background */
+    position: fixed; /* Fixed position */
+    top: 4rem; /* Position from the top */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%); /* Center horizontally */
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-between; /* Space out logo and navbar */
+    padding: 1rem 2rem; /* Padding inside the header */
+    z-index: 1000; /* Ensure header stays on top */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Logo name */
+header a {
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+header a:hover {
+    color: #1e3a8a; /* Change to blue on hover */
+}
+
+header .logo {
+    font-size: 3rem; /* Large font size */
+    font-weight: 600; /* Bold text */
+}
+
+header .logo span {
+    color: #1e3a8a; /* Blue color for spans */
+}
+
+/* Navbar links */
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+header .navbar ul li {
+    margin: 0 1rem; /* Space between list items */
+}
+
+header .navbar ul li a {
+    font-size: 2rem; /* Font size */
+    color: #333; /* Dark text color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+header .navbar ul li a:hover {
+    color: #1e3a8a; /* Change to blue on hover */
+}
+
+/* Bars icon (for mobile menu) */
+header .fa-bars {
+    font-size: 3rem; /* Icon size */
+    color: #1e3a8a; /* Blue color */
+    cursor: pointer; /* Show pointer on hover */
+    display: none; /* Hide by default */
+}
+
+/* Times icon (for mobile menu) */
+header .fa-times {
+    transform: rotate(180deg); /* Rotate icon */
+}
+
+/* Nav toggle (for mobile menu) */
+header .nav-toggle {
+    top: 5.5rem; /* Position from the top */
+    opacity: 1; /* Show the menu */
+}
+
+/* Active header (when scrolled) */
+.header-active {
+    top: 0; /* Stick to the top */
+    width: 100%; /* Full width */
+    box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.3); /* Add shadow */
+}

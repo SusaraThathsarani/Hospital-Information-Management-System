@@ -1,0 +1,162 @@
+/* Reviews Section */
+/*.review {
+    background-color: #81c7ea;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box i {
+    font-size: 2rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.info h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 10px;
+}
+
+.info span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        margin-bottom: 30px;
+    }
+}
+*/
+
+/* General styles for the review section */
+.review {
+    background-color: #81c7ea; /* Light background color */
+    padding: 5rem 0; /* Padding for the section */
+    text-align: center; /* Center-align text */
+}
+
+/* Heading styles */
+.review .heading {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1e3a8a; /* Blue color for heading */
+    text-decoration: underline; /* Underline the heading */
+    padding-bottom: 1rem; /* Space below the heading */
+    display: inline-block; /* Ensure underline only spans the text */
+}
+
+/* Subtitle styles */
+.review .title {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin: 1rem 0 3rem 0;
+    color: #777; /* Subtitle color */
+}
+
+/* Box container for reviews */
+.review .box-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+/* Individual review box */
+.review .box-container .box {
+    width: 35rem; /* Fixed width for each box */
+    text-align: center;
+    padding: 0 2rem;
+    margin: 4rem 1.5rem;
+    background-color: #fff; /* White background */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.3); /* Box shadow */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Quote icon */
+.review .box-container .box i {
+    font-size: 6rem; /* Large icon size */
+    margin-top: -3rem; /* Move icon up */
+    color: #1e3a8a; /* Blue color for icon */
+    opacity: 0.4; /* Slightly transparent */
+}
+
+/* Review text */
+.review .box-container .box p {
+    color: #333; /* Dark text color */
+    font-size: 1.7rem; /* Font size */
+    padding: 2rem 0; /* Padding around text */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Reviewer info */
+.review .box-container .box .info {
+    padding: 1rem 0;
+    border-top: 0.1rem solid #333; /* Add a border above the info */
+}
+
+/* Reviewer name */
+.review .box-container .box .info h3 {
+    color: #1e3a8a; /* Blue color for name */
+    font-size: 2rem; /* Font size */
+    margin-bottom: 0.5rem; /* Space below name */
+}
+
+/* Review date */
+.review .box-container .box .info span {
+    color: #777; /* Gray color for date */
+    font-size: 1.5rem; /* Font size */
+}
+
+/* Hover effect for the box */
+.review .box-container .box:hover {
+    transform: translateY(-1rem); /* Lift the box on hover */
+}

@@ -1,0 +1,64 @@
+/* General styles for the home section */
+.home {
+    min-height: 100vh; /* Full viewport height */
+    padding-top: 10rem; /* Padding at the top */
+    background-color: #81c7ea; /* Light background color */
+}
+
+/* Row container for home content and images */
+.home .row {
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: space-around; /* Space out content and images */
+    width: 85%; /* Set width to 85% of the container */
+    margin: 0 auto; /* Center the row */
+}
+
+/* Home images */
+.home .row .images img {
+    height: 100vh; /* Set height to 75% of the viewport height */
+    border-radius: 1rem; /* Rounded corners */
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Home heading */
+.home .content h1 {
+    font-size: 4rem; /* Large font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 1.5rem; /* Space below heading */
+}
+
+/* Span inside heading */
+.home .content h1 span {
+    color: #1e3a8a; /* Blue color for spans */
+}
+
+/* Home description */
+.home .content p {
+    font-size: 1.9rem; /* Font size */
+    color: #555; /* Gray text color */
+    margin-bottom: 2rem; /* Space below description */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Read More button */
+.home .content .button {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    font-size: 1.6rem;
+    color: #fff; /* White text color */
+    background-color: #1e3a8a; /* Blue background color */
+    border: none;
+    border-radius: 0.5rem; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for Read More button */
+.home .content .button:hover {
+  
+    border: .1rem solid var(--blue);
+    background: var(--white);
+    color: var(--blue);
+    letter-spacing: .1rem;
+}

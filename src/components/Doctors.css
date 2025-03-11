@@ -1,0 +1,109 @@
+/* General styles for the card section */
+.card {
+    background-color: #81c7ea;
+    padding: 50px 0;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container for centering content */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Heading styles */
+.heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1e3a8a; /* Beautiful blue color */
+    text-decoration: underline; /* Underline the heading */
+    padding-bottom: 10px; /* Space below the heading */
+    display: inline-block; /* Ensure underline only spans the text */
+}
+
+/* Subtitle styles */
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 20px 0;
+    color: #777;
+}
+
+/* Box container for doctors */
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual doctor box */
+.box {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Doctor image */
+.card .box-container .box img {
+    height: 30rem; /* Set height to 30rem */
+    width: 100%; /* Full width */
+    object-fit: cover; /* Ensure the image covers the area */
+    border-bottom: 2px solid #f1f1f1; /* Add a border below the image */
+}
+
+/* Doctor content */
+.card .box-container .box .content {
+    padding: 1rem 1.3rem; /* Padding for content */
+}
+
+/* Doctor name */
+.card .box-container .box .content h2 {
+    font-size: 2rem; /* Larger font size */
+    text-align: center; /* Center-align text */
+    color: #333; /* Default text color */
+    transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transitions */
+}
+
+/* Hover effect for doctor name */
+.card .box-container .box .content h2:hover {
+    color: #1e3a8a; /* Change to blue on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Doctor profession */
+.card .box-container .box .content p {
+    font-size: 1.7rem; /* Font size for profession */
+    text-align: center; /* Center-align text */
+    color: #555; /* Text color */
+}
+
+/* Social icons container */
+.card .box-container .box .content .icons {
+    text-align: center; /* Center-align icons */
+    margin-top: 15px; /* Add space above the icons */
+}
+
+/* Social icons */
+.card .box-container .box .content .icons a {
+    font-size: 2rem; /* Icon size */
+    color: #1e3a8a; /* Blue color for icons */
+    margin: 1rem; /* Space between icons */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover effect for social icons */
+.card .box-container .box .content .icons a:hover {
+    color: #f39c12; /* Change to orange on hover */
+}
+
+/* Hover effect for the box */
+.box:hover {
+    transform: translateY(-10px); /* Lift the box on hover */
+}
